@@ -25,9 +25,9 @@ class Stack
 {
 public:
 
-    bool isEmpty() const; /// bool Stack::empty() – returneaza daca stiva este goala
-    void push(const T& item); /// void Stack::push(const T &item) – adauga item la stiva
-    const T& top() const /// T &Stack::top() – returneaza referinta catre cel mai recent adaugat item
+    bool isEmpty() const; /// bool Stack::empty() â€“ returneaza daca stiva este goala
+    void push(const T& item); /// void Stack::push(const T &item) â€“ adauga item la stiva
+    const T& top() const /// T &Stack::top() â€“ returneaza referinta catre cel mai recent adaugat item
     {
         if (isEmpty())
         {
@@ -36,10 +36,11 @@ public:
         return v.back();
     }
     /// OBS: nu pot pune doar prototipul functiei top() si apoi sa o declar extern
-    void pop(); /// void Stack::pop() – scoate din stiva itemul cel mai recent adaugat
+    void pop(); /// void Stack::pop() â€“ scoate din stiva itemul cel mai recent adaugat
     vector <T> v;
 };
 
+/// MODIFICARE # GITHUB
 /// declarare metode publice al clasei Stack
 template<typename T>
 bool Stack<T>::isEmpty() const
